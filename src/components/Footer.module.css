@@ -1,0 +1,22 @@
+.footer {
+  padding: 32px 40px;
+  font-size: 0.875rem;
+  color: var(--color-primary);
+}
+
+.contact {
+  display: flex;
+  gap: 16px;
+  margin-bottom: 8px;
+}
+
+.link {
+  color: var(--color-secondary);
+  text-decoration: underline;
+}
+
+@media (max-width: 600px) {
+  .footer {
+    padding: 24px 20px;
+  }
+}

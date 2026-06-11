@@ -1,0 +1,19 @@
+.page {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.main {
+  flex: 1;
+  padding: 16px 40px;
+}
+
+.body {
+    padding: 2rem;
+    border-radius: 8px;
+    background-color: var(--color-highlight);
+    font-family: var(--font-secondary);
+    font-size: 1.7rem;
+    font-weight: 300;
+}

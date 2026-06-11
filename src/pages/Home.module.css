@@ -1,0 +1,26 @@
+.page {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.main {
+  flex: 1;
+  padding: 16px 40px 40px;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 32px 28px;
+}
+
+@media (max-width: 600px) {
+  .main {
+    padding: 16px 20px 40px;
+  }
+
+  .grid {
+    grid-template-columns: 1fr;
+  }
+}

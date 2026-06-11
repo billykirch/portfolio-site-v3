@@ -1,0 +1,85 @@
+.page {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.main {
+  flex: 1;
+  padding: 16px 40px;
+}
+
+.biosquare {
+  display: flex;
+  flex-direction: row;
+  max-width: 800px;
+  gap: 2rem;
+  padding: 2rem;
+  border-radius: 8px;
+  background-color: var(--color-highlight);
+}
+
+.bio {
+  flex: 1;
+  font-size: 1.7rem;
+  font-family: var(--font-secondary);
+  font-weight: 300;
+  color: var(--color-primary);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+}
+
+.headshot {
+  width: 36%;
+  height: auto;
+  border-radius: 8px;
+  align-self: flex-start;
+}
+
+.contact {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-top: 1rem;
+}
+
+.link {
+  font-family: var(--font);
+  font-size: 1.5rem;
+  color: var(--color-secondary);
+  text-decoration: underline;
+  font-weight: 400;
+}
+
+.link:hover {
+  color: var(--color-primary);
+  transition: auto;
+}
+
+@media (max-width: 700px) {
+  .biosquare {
+    flex-direction: column;
+    max-width: 300px;
+  }
+  .headshot {
+    width: 100%
+  }
+  .bio {
+    font-size: 1.4rem;
+  }
+  .contact {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+  .link {
+    font-size: 1.4rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .main {
+    padding: 16px 20px 40px;
+  }
+}
