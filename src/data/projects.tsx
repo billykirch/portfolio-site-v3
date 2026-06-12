@@ -22,6 +22,7 @@ export interface Project {
   slug: string
   title: string
   subtitle: string
+  tags?: string[]
   thumbnail?: string
   images?: string[]
   content?: React.ReactNode
@@ -32,11 +33,10 @@ export const projects: Project[] = [
     slug: 'fairwork',
     title: 'FairWork',
     subtitle: 'An AI-powered contract-review tool to protect workers from labor exploitations',
+    tags: ['Claude Platform', 'Python', 'TypeScript', 'React'],
     thumbnail: fairworkThumb,
     content: (
       <>
-      <h3>&lt;/&gt;</h3>
-      <p className={styles.tags}>Claude Platform, Python, Typescript, React</p>
       <h3>Background</h3>
       <p>
         In an employer’s market, job-seekers are inclined to accept a contract with minimal legal counselling. Signing onto unclear fine print causes major headaches in any work disputes down the line.
@@ -47,9 +47,6 @@ export const projects: Project[] = [
       <h3>Process</h3>
       <p>
         Leveraging an LLM is a helpful first step. There's is potential to quickly and cheaply identify weakness that could later be exploited by an employer.
-      </p>
-      <p>
-        That was the impetus for FairWork. Upload a contract, and quickly understand potential risks as an employee.
       </p>
       <p>
         Contract <i>flags</i> are broken down by <i>high</i> and <i>moderate</i> levels of severity. The system references specific sections and clauses in any uploaded contract, explaining the legal issues that could arise, tailored to your specific job title and relevant state jurisdiction.
@@ -66,20 +63,17 @@ export const projects: Project[] = [
       </p>
       </>
     ),
-    images: [fairworkInput, fairworkThinking, fairworkResult],
+    images: [fairworkInput, fairworkResult],
   },
   {
 
     slug: 'artic-notes',
     title: 'ArtIC Notes',
     subtitle: 'An exercise in AWS for quickly noting artwork observations',
+    tags: ['AWS', 'Python', 'CLI'],
     thumbnail: articThumb,
     content: (
       <>
-        <h3>&lt;/&gt;</h3>
-        <p className={styles.tags}>
-          AWS, Python, CLI
-        </p>
         <h3>Background</h3>
         <p>
           In an art history course (Spanish Art and Architecture, to be precise), I took notes on dozens of artworks. Irritatingly, when referencing my notes later on, I’d have to search the internet for details that would contextualize my momentary observations.
@@ -109,11 +103,11 @@ export const projects: Project[] = [
     slug: 'dtr',
     title: 'Q&A Buddy',
     subtitle: 'Undergraduate research on improving peer-mentorship for computer science students',
+    tags: ['UX', 'Research'],
     thumbnail: qabuddyThumb,
     content: (
       <>
-        <h3>&lt;/&gt;</h3>
-        <p className={styles.tags}>UX, Research</p>
+        <h3></h3>
         <p style={{ color: 'var(--color-secondary)', fontWeight: '300' }}>
           Read about the <a href='https://dtr.northwestern.edu/projects/recXp41jRcoUwlcLq' target='_blank' style={{ textDecoration: 'underline' }}>project</a> and the <a href='https://dtr.northwestern.edu/how-we-work' target='_blank' style={{ textDecoration: 'underline' }}>research group</a>.
         </p>
@@ -125,11 +119,11 @@ export const projects: Project[] = [
     slug: 'metamag',
     title: 'Meta-Mag',
     subtitle: 'A study of the mutating journalistic and cultural role of magazines',
+    tags: ['Research'],
     thumbnail: metamagThumb,
     content: (
       <>
-        <h3>&lt;/&gt;</h3>
-        <p className={styles.tags}>Research</p>
+        <h3></h3>
         <p style={{ color: 'var(--color-secondary)', fontWeight: '300' }}>
           Access the compilation of articles <a href='https://nuknightlab.notion.site/Magazines-in-the-21st-Century-What-It-Takes-to-Succeed-05fb8c72c7cf4fee91cf10f67548a285' target='_blank' style={{ textDecoration: 'underline' }}>here</a>.
         </p>

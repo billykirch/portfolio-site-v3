@@ -28,7 +28,14 @@ export default function ProjectPage() {
           <div className={styles.content}>
             <h1 className={styles.title}>{project.title}</h1>
             <h2 className={styles.subtitle}>{project.subtitle}</h2>
-            {project.content ?? <p>Project details coming soon...</p>}
+            {project.tags && project.tags.length > 0 && (
+              <div className={styles.tags}>
+                {project.tags.map((i) => (
+                  <span className={styles.tag}>{i}</span>
+                ))}
+              </div>
+            )}
+            {project.content}
           </div>
           {project.images && project.images.length > 0 && (
             <div className={styles.images}>
