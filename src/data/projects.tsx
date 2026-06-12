@@ -1,12 +1,10 @@
 import React from 'react'
-import styles from '../pages/ProjectPage.module.css'
 
 import qabuddyThumb from '../assets/project-images/qabuddy/thumbnail3.png'
 import qabuddyModel from '../assets/project-images/qabuddy/concept-model.png'
 
 import fairworkThumb from '../assets/project-images/fairwork/thumbnail.png'
 import fairworkInput from '../assets/project-images/fairwork/input-ss.png'
-import fairworkThinking from '../assets/project-images/fairwork/thinking-ss.png'
 import fairworkResult from '../assets/project-images/fairwork/result-ss.png'
 
 import articThumb from '../assets/project-images/artic/thumbnail.jpg'
